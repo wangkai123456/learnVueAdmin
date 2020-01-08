@@ -2,7 +2,7 @@
   <div class="main">
     <header class="header">
       <div>
-        <div class="tit">管理后台头部导航啦你</div>
+        <div class="tit">管理后台头部导航</div>
       </div>
       <div class="opear">
         <div @click="$router.push('/home')">
@@ -15,7 +15,7 @@
     </header>
     <div class="content">
       <div class="nav" style="width:160px">
-        <SideNavigationBar/>
+        <side-navigation-bar/>
       </div>
       <div class="router_view">
         <router-view></router-view>
@@ -24,12 +24,6 @@
   </div>
 </template>
 <script>
-import SideNavigationBar from "@/components/SideNavigationBar";
-export default {
-  components: {
-    SideNavigationBar
-  }
-};
 </script>
 
 <style lang="less" scoped>

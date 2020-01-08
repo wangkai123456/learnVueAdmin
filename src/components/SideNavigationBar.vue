@@ -40,6 +40,7 @@ export default {
   },
 
   created() {
+    // 引入后 初始化的时候对数阶进行过滤
     this.navigation = navigation.filter(
       item =>
         item.roleType === localStorage.getItem("roleType") || !item.roleType
