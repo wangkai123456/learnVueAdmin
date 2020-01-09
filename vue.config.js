@@ -11,7 +11,6 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias
       .set('utils', resolve('src/utils'))
-      .set('api', resolve('src/api'))
   },
 
   pluginOptions: {
